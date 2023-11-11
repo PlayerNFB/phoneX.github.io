@@ -1,24 +1,2 @@
-@import url(home.css);
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Playfair+Display:ital,wght@1,500&display=swap');
-:root {
-    --my-color: black;
-    --nord-0: white;
-    --nord-1: #3B4252;
-    --nord-2: #434C5E;
-    --nord-3: #4C566A;
-    --nord-white-0: #ECEFF4;
-    --nord-white-1: #D8DEE9;
-    --border-radius: 2rem;
-    --font-title-size: 7rem;
-    --font-subtitle-size: 3rem;
-    --font-size: 20rem;
-    --font-size-paragraph: 2rem;
-    --gap-size: 2rem;
-    --box-size: 100%;
-    --background-color: #D8DEE9;
-    --font-family: 'Roboto', sans-serif;
-    --title-color: #B48EAD;
-    --subtitle-color: #D08770;
-  }
+
 
