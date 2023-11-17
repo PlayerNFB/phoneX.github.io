@@ -1,3 +1,83 @@
+body {
+    background-color: white ;
+}
+
+.main {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 20% 26% 26% 28%;
+    grid-template-rows: 200px 300px 300px 300px 100px;
+    
+
+}
+
+.caja-m {
+    border: 3px solid black;
+}
+
+.banner-recenas {
+    grid-column: 1/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-family:'Nanum Gothic', sans-serif;
+    font-size: 27px;
+    background-color: gold ;
+}
+
+.receña {
+    margin-top: 20%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white ;
+}
+
+
+.img-persona-recena {
+    height: 80%;
+    border-radius: 50%;
+   
+}
+
+
+.img-persona-recena-2 {
+    height: 80%;
+    border-radius: 100%;
+    margin: 0 160px;
+}
+
+
+
+.img-persona-recena-3 {
+    height: 80%;
+}
+
+.receña-texto {
+    grid-column: 2/5;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 70px;
+ 
+}
+
+.name-receña {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 30px;
+    color: black;
+}
+
+.p-receña {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 20px;
+    color: black
+}
 
 
 
