@@ -12,7 +12,8 @@ body {
 }
 
 .caja-m {
-    border: 3px solid black;
+    border: 2px solid #D8D8D8;
+    box-shadow: 5px 5px 5px  #D1D1D1;
 }
 
 .banner-recenas {
@@ -38,7 +39,9 @@ body {
 
 .img-persona-recena {
     height: 80%;
+    width: 80%;
     border-radius: 50%;
+   
    
 }
 
@@ -53,6 +56,8 @@ body {
 
 .img-persona-recena-3 {
     height: 80%;
+    width: 80%;
+    border-radius: 100%;
 }
 
 .receña-texto {
@@ -60,6 +65,7 @@ body {
     padding: 20px;
     margin: 50px;
     border-radius: 70px;
+    background-color: #F3F4EC;
  
 }
 
@@ -68,6 +74,7 @@ body {
     justify-content: center;
     margin-top: 30px;
     font-size: 30px;
+    font-family:'Nanum Gothic', sans-serif;
     color: black;
 }
 
@@ -76,6 +83,7 @@ body {
     justify-content: center;
     margin-top: 30px;
     font-size: 20px;
+    font-family:'Nanum Gothic', sans-serif;;
     color: black
 }
 
