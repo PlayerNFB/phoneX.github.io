@@ -169,10 +169,13 @@ body {
     width: 100%;
 }
 
-.title-servicios {
-    
+
+.h1-servicios {
     font-family: 'Nanum Gothic', sans-serif;
+    color: #E9BC1C;
 }
+
+
 
 
 .title-servs {
