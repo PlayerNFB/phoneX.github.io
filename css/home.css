@@ -9,7 +9,7 @@ body {
 
 .header {
     background-color: black;
-    height: 60px;
+    height: 57px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -18,7 +18,7 @@ body {
 .nav {
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
 
 }
@@ -29,11 +29,11 @@ body {
 
 .logo {
     padding: 0 20px;
-    height: 60px;
+    height: 55px;
    
 }
 .logo-compañia {
-    font-size: 20px;
+    font-size: 15px;
     display: flex;
     align-items: center; /* Alinea verticalmente los elementos al centro*/
     text-decoration: none;
@@ -42,27 +42,27 @@ body {
 
 }
 .nombre-logo {
-
-    margin-left: 17px; /* Ajusta el margen izquierdo */
-    width: max-content;
+    font-family:'Nanum Gothic', sans-serif;
+    margin-left: 16px; /* Ajusta el margen izquierdo */
 }
 
 .nav-menu {
     display: flex;
-    margin-right: 40px; /*distancia a la derecha*/
+    margin-right: 10px; /*distancia a la derecha*/
     list-style: none;
     
 }
 
 .nav-menu-item {
-  font-size: 19px;
+  font-size: 12px;
     margin: 0 10px;
-    line-height: 60px;
+    line-height: 56px;
     text-transform: uppercase; /*mayuscula*/
     width: max-content; /*no permite saltos entre linea*/
 }
 
 .nav-menu-link {
+    font-family: 'Nanum Gothic', sans-serif;
     padding: 8px 12px; /*8 de alto y 12 de ancho*/
     border-radius: 3px;
 }
@@ -72,32 +72,36 @@ body {
     transition: 0.5s;
 }
 
+.inicio {
+    display: grid;
+   grid-template-columns: 30% 33% 37% 40%;
+   grid-template-rows: 300px 390px 160px 600px 70px 30px;
+   }
+
+
 .img-fondo {
-    height:auto;
-    width: 100%;
-    margin: 60px 0;
+    grid-column: 1/4;
     border: 5px solid black;
     box-shadow: 10px 10px 20px gray;
 }
 
-.inicio {
-    display: grid;
-    grid-template-columns: 35% auto;
-    grid-template-rows: 44%;
-    justify-content: center;
-    margin: 0;
+.div-img-fondo {
+    height: 100%;
     width: 100%;
-
 }
+
+
 
 .caja {
     text-align: center;
     font-family: 'Nanum Gothic', sans-serif;
+    
    
 }
 
 .div-img {
-    grid-row: 1/2;
+    grid-column: 1/2;
+    margin-top: 20%;
     margin-left: 20%;
     background-color: #C4CBCB ;
     border-radius: 40px;
@@ -115,7 +119,9 @@ body {
  
 }
 .inicio-descricion {
+    
     margin: 4%;
+    margin-top: 8%;
     margin-left: 15%;
     grid-column: 2/4;
     border: 1px solid #C4CBCB;
@@ -123,7 +129,6 @@ body {
 
 
 }
-
 
 
 .inicio-subtitle {
@@ -151,7 +156,7 @@ body {
 
 
 .inicio-subtitle-2 {
-    grid-area: 2/1/3/4;
+    grid-column: 1/4;
     margin-top: 90px;
     background-color: #8D8F8F ;
     color: black;
@@ -182,57 +187,52 @@ body {
     color:white;
 }
 
+.inicio-2-diagnostico {
+    grid-column: 1/2;
+    padding-top: 35%;
+    margin-top: 30%;
+    font-size: 30px;
+    color: gold;
+}
+
+.inicio-img-reparacion  {
+    margin-top: 13%;
+    grid-column: 2/3;
+    
+    
+
+}
 
 
-
-
-.inicio-2 {
-    margin-top: 15%;
-    display: grid;
-    grid-template-columns: 100% 90% 70%;
-    grid-template-rows: 100%;
-    width: 100%;
-
+.inicio-2-garantia {
+    margin-top: 20%;
+    grid-column: 3/4;
+    padding-top: 35%;
+    font-size: 30px;
+    color: gold;
 }
 
 
 
 .img-reparacion-3 {
-    height: 100%;
+    
     border-radius: 50px;
     border: 3px solid gold;
-    padding: 7px;
-    
-}
-
-.inicio-2-texto {
-    font-size: 63px;
     height: 100%;
-    padding: 20%;
+    padding: 3px;
+    margin-left: 22%;
+   
 }
 
-.inicio-2-texto:hover {
-    color: gold;
-}
-
-
-.footer {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #f0f0f0;
-    padding: 10px;
-    text-align: center;
-}
 
 
 .red {
+    font-family: 'Nanum Gothic', sans-serif;;
    text-align: center;
    text-transform: uppercase;
    font-weight: bold;
    margin: 12px;
+
 
 }
 
@@ -240,6 +240,16 @@ body {
    text-transform: lowercase;
    text-decoration: none;
    color:#D1C747 
+
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #CECDC8;
 
 }
 
@@ -251,34 +261,49 @@ body {
 
 @media (max-width: 768px) {
     body {
-        padding-top: 70px;
+        background-color: #E0E7EE;
     }
 
-    
+
     .header {
         background-color: black;
-        height: 60px;
-        position: fixed;
-        width: 100%;
+        display: flex;
+        height: auto;
+        overflow: auto;
+        flex-wrap: wrap;
+        width: 100vw;
         top: 0;
         left: 0;
     }
+    .nav {
+        background-color: black;
+    
+        margin: 0 auto;
+   
+      
+    
+    }
+    .nav-link {
+        color: white;
+        text-decoration: none;
+    }
+    
     .logo {
-        font-size: 25px;
-        font-weight: bold;
         padding: 0 20px;
-        line-height: 60px;
         height: 55px;
+       
     }
     .logo-compañia {
-        font-size: 18px;
-        font-family:'Nanum Gothic', sans-serif; ;
+        font-size: 15px;
         display: flex;
         align-items: center; /* Alinea verticalmente los elementos al centro*/
         text-decoration: none;
+        height: 100%;
         color: #f8d653;
     
     }
+
+    
     .nombre-logo {
         margin-left: -4px; /* Ajusta el margen izquierdo */
         width: max-content;
@@ -287,45 +312,212 @@ body {
     
     
     .nav-menu {
-        flex-direction: column;
-        align-items: center;
-        margin-right: 20px; /*distancia a la derecha*/
-       background-color: #2E3440;
-       position: fixed;
-       left: 0;
-       top: 60px;
-       width: 100%;
-       padding: 20px 0;
-       height: calc(100% - 60px);
-       overflow-y: auto;
-  }
-  .nav-menu-item {
-      line-height: 70px;
-  }
-  .nav-menu-link:hover {
-    background: none;
-    color: #83c5f7;
-} 
+        display: flex;
+        justify-content: center;
+      flex-wrap: wrap;
+    
+    }
+
+.nav-menu-item {
+  font-size: 12px;
+    margin: 0 10px;
+    line-height: 45px;
+    text-transform: uppercase; /*mayuscula*/
+    width: max-content; /*no permite saltos entre linea*/
+}
+
+.nav-menu-link {
+    padding: 8px 12px; /*8 de alto y 12 de ancho*/
+    border-radius: 3px;
+}
+
+.nav-menu-link:hover {
+    background-color: darkgoldenrod;
+    transition: 0.5s;
+}
+
+.inicio {
+    display: grid;
+   grid-template-columns: 25% 25% 25% 25%;
+   grid-template-rows: 250px 400px 430px 250px 200px 450px 300px;
+}
+   
+
+.img-fondo {
+    margin-top: 15%;
+    grid-column: 1/5;
+    border: 5px solid black;
+    box-shadow: 10px 10px 20px gray;
+}
+
+.div-img-fondo {
+    height: 100%;
+    width: 100%;
+}
 
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: var(--gap-size);
-  }
+
+.caja {
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    
+   
+}
+
+.div-img {
+    grid-column: 1/4;
+    margin-top: 20%;
+    margin-left: 20%;
+    background-color: #C4CBCB ;
+    border-radius: 40px;
+    box-shadow: 10px 10px 20px gray;
+}
+
+.img-reparacion {
+    margin-top: 30px;
+    margin-left: 30%;
+    height: 80%;
+    width: 90%;
+    border-radius: 40px;
+    box-shadow: 10px 30px 20px gray;
+   
+ 
+}
+.inicio-descricion {
+    margin: 3%;
+    padding: 5%;
+    margin-top: 20%;
+    grid-column: 1/5;
+    border: 1px solid #C4CBCB;
+    border-radius: 40px;
 
 
-.item {
-    border: 1px solid var(--my-color);
-    width: var(--box-size);
-    height: var(--box-size);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--nord-white-0);
-    font-size: var(--font-size);
-  }
+}
+
+
+.inicio-subtitle {
+    color: black;
+    font-size: 2rem;
+    padding: 30px;
+    
+
+}
+
+.p-descripcion {
+    padding: 15px;
+    font-size: 20px ;
+    color: black;
+}
+
+
+#palabraColorida {
+    color: gold; 
+}
+ #palabraColorida-2 {
+    color: black;
+    font-weight: bold;
+ }
+
+
+.inicio-subtitle-2 {
+    grid-column: 1/5;
+    margin-top: 30%;
+    background-color: #8D8F8F ;
+    color: black;
+    box-shadow: 20px 20px 20px gray;
+}
+
+.subtitle-2 {
+    padding: 16px;
+    font-size: 2rem;
+}
+
+.div-boton {
+    margin-top: 7%;
+}
+
+.boton {
+    border: 1px solid gold; 
+    padding: 20px; 
+    background-color: gold; 
+    color: black; 
+    font-weight: bold;
+    text-decoration: none; 
+    text-transform: uppercase;
+    border-radius: 100px; 
+}
+
+.boton:hover {
+    color:white;
+}
+
+.inicio-2-diagnostico {
+   grid-column: 1/5;
+margin-top: -100px;
+    
+}
+
+.inicio-2-diagnostico:hover {
+    color: black;
+}
+
+.inicio-img-reparacion  {
+    grid-column: 1/5;
+    margin-right: 90px;
+    
+
+}
+
+
+.inicio-2-garantia {
+   grid-column: 1/5;
+   margin-top: -60px;
+    
+}
+
+.inicio-2-garantia:hover {
+    color: black;
+}
+
+
+
+.img-reparacion-3 {
+    
+    border-radius: 50px;
+    border: 3px solid gold;
+    height: 100%;
+   
+}
+
+
+
+
+.red {
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+ 
+ 
+ }
+ 
+ .correo {
+    text-transform: lowercase;
+    text-decoration: none;
+    color:#B7A024 
+ 
+ }
+ 
+ .redes-sociales {
+     display: flex;
+     justify-content: center;
+     position: fixed;
+     width: 100%;
+     bottom: 0;
+     background-color: #CECDC8;
+ 
+ }
+
 
 }
