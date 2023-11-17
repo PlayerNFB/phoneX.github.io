@@ -43,16 +43,62 @@ body {
 
 
 
+  @media (max-width: 654px) {
 
+    body {
+      
+     background-image: url("../images/fondo-login.jpeg");
+     background-repeat: no-repeat ;
+     background-size: cover;
+    
+    }
 
+    .contact-form {
 
-
-
-
-
-
-
-
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      border: 2px solid black;
+      text-align: center;
+      margin: 20%;
+    }
   
+    .form-title {
+      font-family: 'Nanum Gothic', sans-serif;;
+      margin: 3%;
+      font-weight: bold;
+    }
+    
+    .form-label {
+      font-family: 'Nanum Gothic', sans-serif;;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    .form-title {
+      font-size: 2rem;
+    }
+    
+    .form-btn {
+      font-size: 20px;
+      border-radius: 30px;
+      background-color: gold;
+      margin: 6% 30%;
+    }
+    
+    .form-btn:hover {
+      background-color: white;
+    }
+  
+
+
+
+
+
+
+
+
+
+  }
 
   
