@@ -1,104 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+
+}
+
 body {
-    background-image: url("../images/fondo-login.jpeg");
-    background-repeat: no-repeat ;
-    background-size: 100%;
+  background-image: url(../images/fondo-login.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+main {
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.contenedor-todo {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+
+}
+
+.caja-trasera {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 128, 255, 0.5);
+}
+
+.caja-trasera div {
+  margin: 100px 40px;
+  color:white;
+  transition: all 500ms;
+}
+
+.caja-trasera div p, 
+.caja-trasera div button {
+  margin-top: 30px;
+}
+
+.caja-trasera div h3 {
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.caja-trasera button{
+  padding: 10px 40px;
+  border: 2px solid white;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  transition: all 300ms;
+
+}
+
+.caja-trasera button:hover {
+  background-color: white;
+  color: #46A2FD;
+}
+
+/*formularios*/
+
+.contenedor-login-register {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+  top: -185px;
+  left: 10px;
+  transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+}
+
+
+
+.contenedor-login-register div{
+  width: 100%;
+  padding: 80px 20px;
+  background: white;
+  position: absolute;
+  border-radius: 20px;
+
+}
+
+.contenedor-login-register div h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #46A2FD;
+}
+
+.contenedor-login-register div input {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background: #f2f2f2;
+  font-size: 16px;
+  outline: none;
+}
+
+.contenedor-login-register div button {
+  padding: 10px 40px;
+  margin-top: 40px;
+  border: none;
+  font-size: 14px;
+  background: #46A2FD;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.formulario-login {
+  opacity: 1;
+  display: block;
+}
+
+.formulario-register {
+  display: none;
+}
+
+/*resposive*/
+
+@media (max-width: 850px){
+
+  main {
+    margin-top: 50px;
   }
 
-
-.contact-form {
-    display: flex;
+  .caja-trasera {
+    max-width: 350px;
+    height: 300px;
     flex-direction: column;
-    gap: 1rem;
-    border: 2px solid black;
-    text-align: center;
-    margin: 10% 30%;
+    margin: auto;
   }
 
-  .form-title {
-    font-family: 'Nanum Gothic', sans-serif;;
-    margin: 3%;
-    font-weight: bold;
+  .caja-trasera div {
+    margin:0;
+    position: absolute;
+
   }
-  
-  .form-label {
-    font-family: 'Nanum Gothic', sans-serif;;
-    font-size: 20px;
-    font-weight: bold;
+
+
+  /*formularios*/
+
+  .contenedor-login-register {
+    top: -10px;
+    left: -5px;
+    margin: auto;
+
   }
-  
-  .form-title {
-    font-size: 2rem;
-  }
-  
-  .form-btn {
-    font-size: 20px;
-    border-radius: 30px;
-    background-color: #A3BE8C;
-    margin: 6% 30%;
-  }
-  
-  .form-btn:hover {
-    background-color: #EBCB8B;
+
+  .contenedor-login-register div {
+    position: relative;
   }
 
 
 
-  @media (max-width: 654px) {
-
-    body {
-      
-     background-image: url("../images/fondo-login.jpeg");
-     background-repeat: no-repeat ;
-     background-size: cover;
-    
-    }
-
-    .contact-form {
-
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      border: 2px solid black;
-      text-align: center;
-      margin: 20%;
-    }
-  
-    .form-title {
-      font-family: 'Nanum Gothic', sans-serif;;
-      margin: 3%;
-      font-weight: bold;
-    }
-    
-    .form-label {
-      font-family: 'Nanum Gothic', sans-serif;;
-      font-size: 20px;
-      font-weight: bold;
-    }
-    
-    .form-title {
-      font-size: 2rem;
-    }
-    
-    .form-btn {
-      font-size: 20px;
-      border-radius: 30px;
-      background-color: gold;
-      margin: 6% 30%;
-    }
-    
-    .form-btn:hover {
-      background-color: white;
-    }
-  
-
-
-
-
-
-
-
-
-
-  }
-
-  
+}

@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #DFDED9  ;
+    background-color: #E0E7EE ;
 }
 
 
@@ -33,14 +33,16 @@ body {
     width: 100%;
 }
 
-.title-servicios {
-    
+.h1-servicios {
+    color: #E9BC1C;
     font-family: 'Nanum Gothic', sans-serif;
 }
 
 
+
 .title-servs {
     font-family: 'Nanum Gothic', sans-serif;
+    margin: 20px;
 }
 
 
@@ -53,7 +55,7 @@ body {
 .texto-ser-1 {
     grid-column: 2/4;
     font-size: 20px;
-    padding: 10%;
+    padding: 5%;
     margin: 90px;
     text-align: center;
     border-radius: 30px;
@@ -73,7 +75,7 @@ body {
 .texto-ser-2 {
     grid-column: 2/4;
     font-size: 20px;
-    padding: 10%;
+    padding: 5%;
     margin: 90px;
     text-align: center;
     border-radius: 30px;
@@ -93,7 +95,7 @@ body {
 .texto-ser-3 {
     grid-column: 2/4;
     font-size: 20px;
-    padding: 10%;
+    padding: 5%;
     margin: 90px;
     text-align: center;
     border-radius: 30px;
@@ -111,7 +113,7 @@ body {
 .texto-ser-4 {
     grid-column: 2/5;
     font-size: 20px;
-    padding: 10%;
+    padding: 5%;
     margin: 90px;
     text-align: center;
     border-radius: 30px;
@@ -130,7 +132,7 @@ body {
 .texto-ser-5 {
     grid-column: 2/4;
    font-size: 20px;
-    padding: 10%;
+    padding: 5%;
     margin: 90px;
     text-align: center;
     border-radius: 30px;
@@ -145,6 +147,10 @@ body {
     border-radius: 20%;
     border: 1px solid black;
     box-shadow: 5px 5px 10px 10px gray;
+}
+
+p {
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 
@@ -177,8 +183,8 @@ body {
 
 
 
-
 .title-servs {
+    margin: 20px;
     font-family: 'Nanum Gothic', sans-serif;
 }
 
@@ -192,7 +198,7 @@ body {
 .texto-ser-1 {
     grid-column: 1/5;
     font-size: 20px;
-    padding: 10%;
+    padding: 5%;
     margin: 90px;
     text-align: center;
     border-radius: 30px;
@@ -212,7 +218,7 @@ body {
 .texto-ser-2 {
     grid-column: 1/5;
     font-size: 20px;
-    padding: 10%;
+    padding: 5%;
     margin: 90px;
     text-align: center;
     border-radius: 30px;
@@ -232,8 +238,8 @@ body {
 .texto-ser-3 {
     grid-column: 1/5;
     font-size: 20px;
-    padding: 10%;
-    margin: 90px;
+    padding: 5%;
+    margin: 80px;
     text-align: center;
     border-radius: 30px;
     border: 3px solid gray;
@@ -250,8 +256,8 @@ body {
 .texto-ser-4 {
     grid-column: 1/5;
     font-size: 20px;
-    padding: 10%;
-    margin: 90px;
+    padding: 5%;
+    margin: 80px;
     text-align: center;
     border-radius: 30px;
     border: 3px solid gray;
@@ -269,8 +275,8 @@ body {
 .texto-ser-5 {
     grid-column: 1/5;
    font-size: 20px;
-    padding: 10%;
-    margin: 90px;
+    padding: 5%;
+    margin: 80px;
     text-align: center;
     border-radius: 30px;
     border: 3px solid gray;
@@ -286,6 +292,10 @@ body {
     box-shadow: 5px 5px 10px 10px gray;
 }
 
+p {
+    padding: 5px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
 
 
 
