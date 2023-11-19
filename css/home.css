@@ -73,14 +73,16 @@ body {
 
 .inicio {
     display: grid;
-   grid-template-columns: 30% 33% 37% 40%;
-   grid-template-rows: 300px 390px 160px 600px 70px 30px;
+   grid-template-columns: 30% 20% 20% 30%;
+   grid-template-rows: 500px 400px 160px 600px 600px 30px;
    }
-
+/*30% 33% 37% 40%*/
+   
 
 .fondo-inicio {
-    grid-column: 1/4;
+    grid-column: 1/5;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 40px;
@@ -88,6 +90,18 @@ body {
     border: 5px solid black;
     box-shadow: 10px 10px 20px gray;
     background-color: #B7A024;
+}
+
+.boton-cerrarSesion {
+    margin-top: 3%;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(33, 31, 31);
+    color:#B7A024;
+    border-radius: 20px;
+    cursor: pointer;
+
 }
 
 .div-img-fondo {
@@ -128,7 +142,7 @@ body {
     margin: 4%;
     margin-top: 8%;
     margin-left: 15%;
-    grid-column: 2/4;
+    grid-column: 2/5;
     border: 1px solid #C4CBCB;
     border-radius: 40px;
 
@@ -161,7 +175,7 @@ body {
 
 
 .inicio-subtitle-2 {
-    grid-column: 1/4;
+    grid-column: 1/5;
     margin-top: 90px;
     background-color: #8D8F8F ;
     color: black;
@@ -193,16 +207,20 @@ body {
 }
 
 .inicio-2-diagnostico {
-    grid-column: 1/2;
-    padding-top: 35%;
-    margin-top: 30%;
-    font-size: 30px;
+    grid-column: 2/5;
+    margin: 15%;
+    padding: 10%;
+    font-size: 40px;
     color: gold;
+    
+    border-radius: 30px;
+    border: 3px solid #D0D1D1   ;
 }
 
 .inicio-img-reparacion  {
-    margin-top: 13%;
-    grid-column: 2/3;
+    grid-column: 1/2;
+    margin-top: 10%;
+
     
     
 
@@ -210,10 +228,14 @@ body {
 
 
 .inicio-2-garantia {
-    margin-top: 20%;
-    grid-column: 3/4;
-    padding-top: 35%;
-    font-size: 30px;
+    grid-column: 1/4;
+    margin: 15%;
+    padding: 10%;
+    font-size: 40px;
+    color: gold;
+    
+    border-radius: 30px;
+    border: 3px solid #D0D1D1   ;
     color: gold;
 }
 
@@ -224,8 +246,7 @@ body {
     border-radius: 50px;
     border: 3px solid gold;
     height: 100%;
-    padding: 3px;
-    margin-left: 22%;
+   
    
 }
 
@@ -342,13 +363,18 @@ body {
 
 .inicio {
     display: grid;
-   grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 25% 25% 25% 25% ;
+   grid-template-rows: 400px 350px 450px 220px 400px 600px 400px;
+   }
+
+
+/*30% 20% 20% 30%*/
+   /*grid-template-columns: 25% 25% 25% 25%;
    grid-template-rows: 250px 400px 430px 250px 200px 450px 300px;
-}
+}*/
    
 
 .fondo-inicio {
-    margin-top: 15%;
     font-size: 24px;
     grid-column: 1/5;
     border: 5px solid #B7A024;
@@ -458,7 +484,6 @@ body {
 
 .inicio-2-diagnostico {
    grid-column: 1/5;
-margin-top: -100px;
     
 }
 
@@ -468,7 +493,7 @@ margin-top: -100px;
 
 .inicio-img-reparacion  {
     grid-column: 1/5;
-    margin-right: 90px;
+  
     
 
 }

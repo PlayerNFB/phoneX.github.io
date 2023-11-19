@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family:'Nanum Gothic', sans-serif;
 
 }
 
@@ -106,12 +106,12 @@ main {
   display: flex;
   justify-content: center;
   backdrop-filter: blur(10px);
-  background-color: rgba(0, 128, 255, 0.5);
+  background-color: rgba(235, 204, 28, 0.5);
 }
 
 .caja-trasera div {
   margin: 100px 40px;
-  color:white;
+  color:rgb(6, 6, 6);
   transition: all 500ms;
 }
 
@@ -127,7 +127,7 @@ main {
 
 .caja-trasera button{
   padding: 10px 40px;
-  border: 2px solid white;
+  border: 2px solid rgb(255, 255, 255);
   background: transparent;
   font-size: 14px;
   font-weight: 600;
@@ -139,8 +139,8 @@ main {
 }
 
 .caja-trasera button:hover {
-  background-color: white;
-  color: #46A2FD;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
 }
 
 /*formularios*/
@@ -172,7 +172,7 @@ main {
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
-  color: #46A2FD;
+  color: #030303;
 }
 
 .contenedor-login-register div input {
@@ -190,8 +190,8 @@ main {
   margin-top: 40px;
   border: none;
   font-size: 14px;
-  background: #46A2FD;
-  color: white;
+  background:rgba(214, 186, 30, 0.962);
+  color: rgb(0, 0, 0);
   cursor: pointer;
   outline: none;
 }

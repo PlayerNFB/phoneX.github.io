@@ -3,10 +3,9 @@ body {
 }
 
 .main {
-    margin-top: 3%;
     display: grid;
     grid-template-columns: 20% 26% 26% 28%;
-    grid-template-rows: 200px 300px 300px 300px 100px;
+    grid-template-rows: 400px 300px 300px 300px 100px;
     
 
 }
@@ -21,10 +20,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
     font-family:'Nanum Gothic', sans-serif;
-    font-size: 27px;
-    background-color: gold ;
+    font-size: 40px;
+    border: 5px solid black;
+    box-shadow: 10px 10px 20px gray;
+    background-color: #B7A024;
 }
 
 .receña {
