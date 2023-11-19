@@ -10,7 +10,6 @@ body {
 .header {
     background-color: black;
     height: 57px;
-    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -79,10 +78,16 @@ body {
    }
 
 
-.img-fondo {
+.fondo-inicio {
     grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Nanum Gothic', sans-serif;;
     border: 5px solid black;
     box-shadow: 10px 10px 20px gray;
+    background-color: #B7A024;
 }
 
 .div-img-fondo {
@@ -277,7 +282,6 @@ body {
     }
     .nav {
         background-color: black;
-    
         margin: 0 auto;
    
       
@@ -313,7 +317,7 @@ body {
     
     .nav-menu {
         display: flex;
-        justify-content: center;
+        justify-content: end;
       flex-wrap: wrap;
     
     }
@@ -343,10 +347,11 @@ body {
 }
    
 
-.img-fondo {
+.fondo-inicio {
     margin-top: 15%;
+    font-size: 24px;
     grid-column: 1/5;
-    border: 5px solid black;
+    border: 5px solid #B7A024;
     box-shadow: 10px 10px 20px gray;
 }
 

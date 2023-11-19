@@ -83,11 +83,38 @@ else {
 
 
 function registro() {
+    let email = document.getElementById("emailRegistro").value;
+    let nombreCompleto = document.getElementById("nombreCompleto").value;
+    let genero = document.getElementById("genero").value;
+    let passwordRegistro = document.getElementById("passwordRegistro").value;
+
+    let data = localStorage.getItem("usuarios");
+    let usuariosData = data ? JSON.parse(data): []
+    usuariosData.push({
+        email: email,
+        nombre: nombreCompleto,
+        genero: genero,
+        password: passwordRegistro
+    })
+
+
+    localStorage.setItem("usuarios", JSON.stringify(usuariosData))
 
 }
+
+
 
 function login() {
     let email = document.getElementById("email").value;
     let password = document.getElementById("passwordLogin").value;
+    let data = JSON.parse(localStorage.getItem("usuarios"));
+
+    let filter = data.filter((usuario) => usuario.email == email && usuario.password == password);
+
+
+    localStorage.setItem("usuarioLogueado", JSON.stringify(filter))
+    window.location.href= "./index.html"
+
+    console.log(filter);
     console.log(email, password);
 }

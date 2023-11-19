@@ -15,6 +15,76 @@ body {
   background-attachment: fixed;
 }
 
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  padding: 0 20px;
+  height: 55px;
+ 
+}
+.logo-compañia {
+  font-size: 15px;
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos al centro*/
+  text-decoration: none;
+  height: 60px;
+  color: #f8d653;
+
+}
+.nombre-logo {
+  font-family:'Nanum Gothic', sans-serif;
+  margin-left: 16px; /* Ajusta el margen izquierdo */
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 10px; /*distancia a la derecha*/
+  list-style: none;
+  
+}
+
+.nav-menu-item {
+font-size: 12px;
+  margin: 0 10px;
+  line-height: 56px;
+  text-transform: uppercase; /*mayuscula*/
+  width: max-content; /*no permite saltos entre linea*/
+}
+
+.nav-menu-link {
+  font-family: 'Nanum Gothic', sans-serif;
+  padding: 8px 12px; /*8 de alto y 12 de ancho*/
+  border-radius: 3px;
+}
+
+.nav-menu-link:hover {
+  background-color: darkgoldenrod;
+  transition: 0.5s;
+}
+
+/*main*/
+
 main {
   width: 100%;
   padding: 20px;
@@ -126,6 +196,10 @@ main {
   outline: none;
 }
 
+
+
+
+
 .formulario-login {
   opacity: 1;
   display: block;
@@ -138,6 +212,79 @@ main {
 /*resposive*/
 
 @media (max-width: 850px){
+
+
+  .header {
+    background: transparent;
+    backdrop-filter: blur(7px);
+    display: flex;
+    height: auto;
+    overflow: auto;
+    flex-wrap: wrap;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+.nav {
+    margin: 0 auto;
+
+  
+
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    padding: 0 20px;
+    height: 55px;
+   
+}
+.logo-compañia {
+    font-size: 15px;
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos al centro*/
+    text-decoration: none;
+    height: 100%;
+    color: #f8d653;
+
+}
+
+
+.nombre-logo {
+    margin-left: -4px; /* Ajusta el margen izquierdo */
+    width: max-content;
+
+}
+
+
+.nav-menu {
+    display: flex;
+    justify-content:end;
+  flex-wrap: wrap;
+
+}
+
+.nav-menu-item {
+font-size: 12px;
+margin: 0 10px;
+line-height: 45px;
+text-transform: uppercase; /*mayuscula*/
+width: max-content; /*no permite saltos entre linea*/
+}
+
+.nav-menu-link {
+padding: 8px 12px; /*8 de alto y 12 de ancho*/
+border-radius: 3px;
+}
+
+.nav-menu-link:hover {
+background-color: darkgoldenrod;
+transition: 0.5s;
+}
+
+
 
   main {
     margin-top: 50px;
