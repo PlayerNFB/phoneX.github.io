@@ -24,7 +24,7 @@ body {
     font-size: 40px;
     border: 5px solid black;
     box-shadow: 10px 10px 20px gray;
-    background-color: #B7A024;
+    background-color: #B7A024;       
 }
 
 .receña {
@@ -33,7 +33,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white ;
+    background-color: white ;          
 }
 
 

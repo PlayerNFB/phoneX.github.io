@@ -92,7 +92,7 @@ main {
   margin-top: 100px;
 }
 
-.contenedor-todo {
+.contenedor-todo {  /*contiene ambos formularios*/
   width: 100%;
   max-width: 800px;
   margin: auto;
@@ -100,7 +100,7 @@ main {
 
 }
 
-.caja-trasera {
+.caja-trasera {   /*parte que te dice si tienes cuenta o no*/
   width: 100%;
   padding: 10px 20px;
   display: flex;
@@ -109,7 +109,7 @@ main {
   background-color: rgba(235, 204, 28, 0.5);
 }
 
-.caja-trasera div {
+.caja-trasera div {   /*edicion de amos div de caja trasera*/
   margin: 100px 40px;
   color:rgb(6, 6, 6);
   transition: all 500ms;
@@ -120,7 +120,7 @@ main {
   margin-top: 30px;
 }
 
-.caja-trasera div h3 {
+.caja-trasera div h3 {   /*edición de los h3 de ambos div de caja trasera*/
   font-weight: 400;
   font-size: 26px;
 }

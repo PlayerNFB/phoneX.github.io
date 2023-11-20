@@ -82,7 +82,7 @@ else {
 
 
 
-function registro() {
+function registro() { //obteniendo los datos del registro 
     let email = document.getElementById("emailRegistro").value;
     let nombreCompleto = document.getElementById("nombreCompleto").value;
     let genero = document.getElementById("genero").value;

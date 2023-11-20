@@ -7,6 +7,10 @@ body {
     background-color: #E0E7EE; /*#2E3440*/
 }
 
+
+/*barra*/
+
+
 .header {
     background-color: black;
     height: 57px;
@@ -26,12 +30,12 @@ body {
     text-decoration: none;
 }
 
-.logo {
+.logo {               /*imagen del logo */
     padding: 0 20px;
     height: 55px;
    
 }
-.logo-compañia {
+.logo-compañia {       /*contenedor de la imagen y el nombre*/
     font-size: 15px;
     display: flex;
     align-items: center; /* Alinea verticalmente los elementos al centro*/
@@ -40,19 +44,19 @@ body {
     color: #f8d653;
 
 }
-.nombre-logo {
+.nombre-logo {          /*nombre del logo*/
     font-family:'Nanum Gothic', sans-serif;
     margin-left: 16px; /* Ajusta el margen izquierdo */
 }
 
-.nav-menu {
+.nav-menu {          /*lista desorganizada con los li*/
     display: flex;
     margin-right: 10px; /*distancia a la derecha*/
     list-style: none;
     
 }
 
-.nav-menu-item {
+.nav-menu-item {        /*contenedores de los li*/
   font-size: 12px;
     margin: 0 10px;
     line-height: 56px;
@@ -60,7 +64,7 @@ body {
     width: max-content; /*no permite saltos entre linea*/
 }
 
-.nav-menu-link {
+.nav-menu-link {       /*los li de los contenedores*/
     font-family: 'Nanum Gothic', sans-serif;
     padding: 8px 12px; /*8 de alto y 12 de ancho*/
     border-radius: 3px;
@@ -82,7 +86,7 @@ body {
 .fondo-inicio {
     grid-column: 1/5;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    /*ajusta el texto y boton seguidos en columna*/
     justify-content: center;
     align-items: center;
     font-size: 40px;
@@ -118,7 +122,7 @@ body {
    
 }
 
-.div-img {
+.div-img {              /*contenedore de la primera img*/
     grid-column: 1/2;
     margin-top: 20%;
     margin-left: 20%;
@@ -127,7 +131,7 @@ body {
     box-shadow: 10px 10px 20px gray;
 }
 
-.img-reparacion {
+.img-reparacion {              /*img del contenedor*/
     margin-top: 30px;
     margin-left: 30%;
     height: 80%;
@@ -137,7 +141,7 @@ body {
    
  
 }
-.inicio-descricion {
+.inicio-descricion {      /*caja de la descripcion de quienes somos*/
     
     margin: 4%;
     margin-top: 8%;
@@ -150,7 +154,7 @@ body {
 }
 
 
-.inicio-subtitle {
+.inicio-subtitle {        /*subtitulo de quienes somos*/
     color: black;
     font-size: 2rem;
     padding: 30px;
@@ -158,14 +162,14 @@ body {
 
 }
 
-.p-descripcion {
+.p-descripcion {           /*descripcion de quienes somo*/
     padding: 15px;
     font-size: 20px ;
     color: black;
 }
 
 
-#palabraColorida {
+#palabraColorida {             /*partes coloridas de los textos*/
     color: gold; 
 }
  #palabraColorida-2 {
@@ -174,7 +178,7 @@ body {
  }
 
 
-.inicio-subtitle-2 {
+.inicio-subtitle-2 {                  
     grid-column: 1/5;
     margin-top: 90px;
     background-color: #8D8F8F ;
@@ -182,13 +186,13 @@ body {
     box-shadow: 20px 20px 20px gray;
 }
 
-.subtitle-2 {
+.subtitle-2 {         /*texto de subtitle-2*/
     padding: 16px;
     font-size: 2rem;
 }
 
 .div-boton {
-    margin-top: 7%;
+    margin-top: 7%;       /*contenedor del boton de servicios en "quienes somos"*/
 }
 
 .boton {
@@ -217,7 +221,7 @@ body {
     border: 3px solid #D0D1D1   ;
 }
 
-.inicio-img-reparacion  {
+.inicio-img-reparacion  {    /*contenedor de la imagen de celular*/
     grid-column: 1/2;
     margin-top: 10%;
 
@@ -241,7 +245,7 @@ body {
 
 
 
-.img-reparacion-3 {
+.img-reparacion-3 {       /*img del celular*/
     
     border-radius: 50px;
     border: 3px solid gold;
@@ -252,7 +256,8 @@ body {
 
 
 
-.red {
+.red {   /*cajas de las redes*/
+
     font-family: 'Nanum Gothic', sans-serif;;
    text-align: center;
    text-transform: uppercase;
@@ -269,7 +274,7 @@ body {
 
 }
 
-.redes-sociales {
+.redes-sociales {   /*contenedor de las cajas de las redes*/
     display: flex;
     justify-content: center;
     position: fixed;
